@@ -4,7 +4,7 @@
 #include <ctype.h>
 
 typedef struct SkipList{
-  struct Node **heads; //sono i puntatori di inizio della SkipList per ogni livello fino a max_height
+  struct Node **heads; //sono i puntatori di inizio della SkipList per ogni livello fino a max_height (** array di puntatori)
   size_t max_level; //è il massimo numero di puntatori che al momento ci sono in un singolo nodo
   size_t max_height;  //è una costante che definisce il massimo numero di puntatori che possono esserci in un singolo nodo 
   int (*compare)(const void*, const void*);  //è il criterio secondo cui ordinare i dati 

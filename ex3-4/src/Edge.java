@@ -1,8 +1,10 @@
 public class Edge<V, L extends Comparable<L>> implements AbstractEdge<V, L>, Comparable<Edge<V, L>> {
-
-    V start;
-    V end; 
-    L label; 
+//V:vertici; L:pesi. L comparable: permette ai pesi di essere confrontati tra loro.
+//Comparable<Edge<V, L>>metodo per confrontare due oggetti Edge tra loro. Questo è particolarmente utile per ordinare gli archi o per utilizzarli in strutture dati che dipendono dal confronto.
+//Edge: ARCO
+    V start; //nodo di partenza
+    V end;   //nodo di destinazione
+    L label; //peso
 
     public Edge(V a, V b, L l) {
         start = a;
@@ -23,7 +25,7 @@ public class Edge<V, L extends Comparable<L>> implements AbstractEdge<V, L>, Com
     }
 
     public int compareTo(Edge<V, L> o) {
-        // Compares this edge with another edge based on their labels
+        // Serve per confrontare l'oggetto corrente this(.edge) con un altro arco
         if (o == null) {
             return 1;
         }

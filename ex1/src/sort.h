@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-
+//Queste dichiarazioni sono necessarie per permettere ad altri file sorgente che includono sort.h di conoscere e utilizzare queste funzioni. (vabbè grazie al c)
 void switch_element(void *x, void *y, int t_size);
 void copy(void *x, void *y, int size);
 void merge_binary_insertion_sort(void *base, size_t nitems, size_t size, size_t k, int (*compar)(const void*, const void*));
