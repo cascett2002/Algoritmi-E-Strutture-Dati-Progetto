@@ -1,0 +1,17 @@
+# ignora i file csv da non committare
+*.csv 
+
+# ignora i file txt da non committare
+*.txt
+
+# ignora la cartella bin 
+/bin/
+
+#ignora la cartella lib
+/lib/
+
+#ignora la cartella tests
+/tests/
+
+#ignora .class
+*.class
